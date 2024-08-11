@@ -19,7 +19,7 @@ passport.deserializeUser((obj, done) => {
 let strategy = new Strategy({
   clientID: "1271896737241366682", // bot id
   clientSecret: "iv-RbVIrVtUVDyQN438uCbCvP-s0x9N-", // inside https://discord.com/developers/applications
-  callbackURL: "https://ishakmusk2027.github.io/heinfo/callback", // ex "https://mysteriouscodes.com/callback"
+  callbackURL: "https://heinfo.onrender.com/callback", // ex "https://mysteriouscodes.com/callback"
   scope: ["identify"]
 }, (accessToken, refreshToken, profile, done) => {
   process.nextTick(() => done(null, profile));
