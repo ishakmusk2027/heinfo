@@ -19,7 +19,7 @@ passport.deserializeUser((obj, done) => {
 let strategy = new Strategy({
   clientID: "1271896737241366682", // bot id
   clientSecret: "iv-RbVIrVtUVDyQN438uCbCvP-s0x9N-", // inside https://discord.com/developers/applications
-  callbackURL: "https://8180085a-ffb1-4499-ba2e-cb761bbe71a6-00-1lrryn5fx1j6.spock.replit.dev/callback", // ex "https://mysteriouscodes.com/callback"
+  callbackURL: "https://ishakmusk2027.github.io/heinfo/callback", // ex "https://mysteriouscodes.com/callback"
   scope: ["identify"]
 }, (accessToken, refreshToken, profile, done) => {
   process.nextTick(() => done(null, profile));
